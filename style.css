@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.header {
+    text-align: center;
+}
+
+.sub_header {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 20px;
+
+}
+.form_input {
+  margin-bottom: 10px;
+}
+
+.input_text {
+    margin-bottom: 5px;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+.input_textarea {
+  margin-bottom: 5px;
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.form_label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.select_opt {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.redactBtn,
+.resetBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.redactBtn:hover,
+.resetBtn:hover {
+    background-color: #0056b3;
+}
+
+.redacted_cont {
+    margin-top: 20px;
+}
+
+.header2 {
+    margin-bottom: 10px;
+}
+
+.show_redacted_text {
+    font-size: 18px;
+}
+
+.header3 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cal {
+    font-weight: normal;
+}

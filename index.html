@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDACTR</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">REDACTR</h1>
+        <p class="sub_header">
+            SCRAMBLE SOME WORDS FROM A BODY OF TEXT CONTENT
+        </p>
+        <form class="form-container" id="myForm">
+            <div class="form_input">
+                <label class="form_label">Enter your content:</label>
+                <textarea
+                    class="input_textarea"
+                    id="content"
+                ></textarea>
+            </div>
+
+            <div class="form_input">
+                <label class="form_label"  
+                    >Words to be redacted (separated by spaces):</label
+                >
+                <input class="input_text" type="text" id="redact_words" />
+            </div>
+
+            <div class="form_input">
+                <label class="form_label"
+                    >Choose a replacement:</label
+                >
+                <select class="select_opt" id="replaced_words">
+                  <option value="____">Underscores</option>
+                    <option value="****">Asterisks</option>
+                    <option value="----">Dashes</option>
+                    <option value="????">Question Marks</option>
+                </select>
+            </div>
+
+            <button class="redactBtn" type="submit" id="redactBtn">
+                Redact Now
+            </button>
+
+            <button class="resetBtn" type="button" id="resetBtn">
+                Reset 
+            </button>
+        </form>
+
+        <div class="redacted_cont">
+            <h2 class="header2">Redacted words: </h2>
+            <p id="show_redacted_text" class="show_redacted_text"></p>
+            <h3 class="header3">Status:</h3>
+            <div>
+                Words scanned: <span id="word_count" class="cal">0</span>, Words
+                redacted: <span id="word_redacted" class="cal">0</span>, Characters
+                redacted: <span id="char_redacted" class="cal">0</span>
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
